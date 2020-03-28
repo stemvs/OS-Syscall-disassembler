@@ -7,7 +7,7 @@
 
 int main(int argc, char* argv[]) {
 	FILE* fp;
-	char buffer[3], hexBuffer32[9], instructionHex16[5], instruction[64];
+	char buffer[3], hexBuffer32[9], instructionHex16[5], instruction[65];
 	unsigned int offset, value, i, syscall, syscallLength;
 	if(argc < 2) {
 		printf("No filename specified\n");
