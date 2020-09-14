@@ -51,7 +51,7 @@ int main(int argc, char* argv[]) {
 		offset += 2;
 		itolh(offset | 0x80000000, 8, hexBuffer32);
 	}
-	printf("...\n");
+	puts("...");
 	fclose(fp);
 	return 0;
 }
