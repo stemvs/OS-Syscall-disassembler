@@ -10,16 +10,16 @@ int main(int argc, char* argv[]) {
 	char buffer[3], hexBuffer32[9], instructionHex16[5], instruction[65];
 	unsigned int offset, value, i, syscall, syscallLength;
 	if(argc < 2) {
-		puts("No filename specified\n");
+		puts("No filename specified");
 		return 0;
 	}
 	if(argc < 3) {
-		puts("No syscall specified\n");
+		puts("No syscall specified");
 		return 0;
 	}
 	fp = fopen(argv[1], "rb");
 	if(!fp) {
-		puts("File opening failed\n");
+		puts("File opening failed");
 		return 0;
 	}
 	hexBuffer32[8] = 0x0;
