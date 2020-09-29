@@ -5,9 +5,10 @@
 char* itolh(unsigned int offset, int l, char* stringBuffer) {
 	unsigned char nibble;
 	int i;
+	l = l - 1
 	for(i = 0; i < l; ++i) {
 		nibble = (0xF & (offset >> (i * 4)));
-		stringBuffer[l - i - 1] = nibble > 0x9 ? 0x37 + nibble : 0x30 | nibble;
+		stringBuffer[l - i] = nibble > 0x9 ? 0x37 + nibble : 0x30 | nibble;
 	}
 	return stringBuffer;
 }
