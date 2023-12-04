@@ -1,5 +1,4 @@
-// hejsotnoss
-// 3/25/2020
+
 #include "disassemble.h"
 
 char* itolh(unsigned int offset, int l, char* stringBuffer) {
