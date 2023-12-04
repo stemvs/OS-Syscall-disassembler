@@ -1,5 +1,4 @@
-// hejsotnoss
-// 3/24/2020
+
 #include "disassemble.h"
 
 #define comp2(binaryBuffer) ((binaryBuffer[0] & 0xFF) << 8 | (binaryBuffer[1] & 0xFF))
